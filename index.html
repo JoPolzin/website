@@ -1,112 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">  <!-- Character encoding set to UTF-8 for international character support -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Ensures compatibility with older versions of Internet Explorer -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive to mobile devices -->
-    <title>Johanna Polzin - Personal Website</title> <!-- Title of the page displayed in the browser tab -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johanna Polzin - Personal Website</title>
     <style>
-        /* General styling for the page */
-        /* Make the entire page a flex container to control the layout */
+        /* Make the html and body elements take up the full height of the viewport */
         html, body {
-            height: 100%; /* Ensure the body and html take up full height */
-            font-family: Arial, sans-serif; /* Sets the default font for the page 
-            background-color: #f0f0f0; /* Light gray background color 
-            color: #333; /* Dark gray text color 
+            height: 100%; /* Ensures the height of the page is 100% of the viewport */
             margin: 0;
             padding: 0;
+        }
+
+        /* Flex container to make the layout adjust properly */
+        body {
             display: flex;
-            flex-direction: column; /* Arrange items vertically */
-        }   
-    
-        /* Styling for the header section */
+            flex-direction: column; /* Align items vertically */
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
         header {
-            background-color: #333; /* Dark background color for contrast */
-            color: white; /* White text color for better readability on the dark background */
+            background-color: #333;
+            color: white;
             padding: 1rem;
-            text-align: center; /* Centered text */
+            text-align: center;
         }
 
-        /* Main container styling */
         .container {
-            flex: 1; /* This makes the container grow to fill available space */
-            padding: 2rem; /* Padding inside the container */
-            max-width: 800px; /* Maximum width for readability */
-            margin: 0 auto; /* Centers the container on the page */
-            background-color: white; /* White background color to make content stand out */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+            flex: 1; /* Makes the container take up available space */
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        /* Heading styles */
         h1 {
-            color: #fff; /* White color specifically for the main header text */
+            color: #fff;
         }
 
         h2 {
-            color: #333; /* Dark gray color for secondary headers */
+            color: #333;
         }
 
-        /* Section styling to create spacing between sections */
         .section {
-            margin-bottom: 2rem; /* Space below each section */
+            margin-bottom: 2rem;
         }
 
-        /* Flexbox layout for the "About Me" section */
         .about-me {
-            display: flex; /* Flexbox to align items horizontally */
-            align-items: center; /* Vertically center items */
-            justify-content: space-between; /* Space between text and image */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
-        /* Styling for the image in the "About Me" section */
         .about-me img {
-            width: 150px; /* Fixed width */
-            height: 150px; /* Fixed height to keep the image square */
-            border-radius: 50%; /* Makes the image circular */
-            margin-left: 1rem; /* Space between the image and text */
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-left: 1rem;
         }
 
-        /* Footer styling */
         footer {
-            text-align: center; /* Centered text */
+            background-color: #333;
+            color: white;
+            text-align: center;
             padding: 1rem;
-            background-color: #333; /* Dark background to match the header */
-            color: white; /* White text for contrast */
-            flex-shrink: 0; /* Ensures the footer doesn't shrink */
             width: 100%; /* Ensures the footer spans the full width of the screen */
+            margin-top: auto; /* Pushes the footer to the bottom if there's extra space */
         }
 
-        /* Link styles */
         a {
-            color: #333; /* Dark gray color for links */
-            text-decoration: none; /* Removes the default underline */
+            color: #333;
+            text-decoration: none;
         }
 
         a:hover {
-            text-decoration: underline; /* Underline on hover for better usability */
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-<!-- Header section of the page -->
 <header>
     <h1>Welcome!</h1>
-    <p>This side is currently under construction. But it will be done before Stuttgart 21.</p> <!-- Light-hearted message about the site's status -->
+    <p>This side is currently under construction. But it will be done before Stuttgart 21.</p>
 </header>
 
-<!-- Main content container -->
 <div class="container">
-    <!-- "About Me" section with text and image -->
     <div class="section about-me">
         <div>
             <h2>About Me</h2>
             <p>Hi! I'm Johanna. I made this website, because ppl were complaining about personal websites without a picture. Since i'm also bad with names, this is me: </p>
         </div>
-        <img src="/pictures/me.jpg" alt="Your Photo"> <!-- Displays a profile picture on the right side -->
+        <img src="/pictures/me.jpg" alt="Your Photo">
     </div>
 
-    <!-- Portfolio section listing some projects -->
     <div class="section">
         <h2>Portfolio</h2>
         <p>Here are some of the projects I'm working on:</p>
@@ -117,16 +108,14 @@
         </ul>
     </div>
 
-    <!-- Contact section -->
     <div class="section">
         <h2>Contact</h2>
-        <p>pls dont</p> <!-- Humorous message suggesting no contact is preferred -->
+        <p>pls dont</p>
     </div>
 </div>
 
-<!-- Footer section -->
 <footer>
-    <p> bottom text.</p> <!-- Simple message at the bottom of the page -->
+    <p> bottom text.</p>
 </footer>
 
 </body>
