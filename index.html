@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Metadata for the webpage -->
-    <meta charset="UTF-8"> <!-- Character encoding set to UTF-8 for international character support -->
+    <meta charset="UTF-8">  <!-- Character encoding set to UTF-8 for international character support -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Ensures compatibility with older versions of Internet Explorer -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive to mobile devices -->
     <title>Johanna Polzin - Personal Website</title> <!-- Title of the page displayed in the browser tab -->
-
     <style>
         /* General styling for the page */
-        body {
-            font-family: Arial, sans-serif; /* Sets the default font for the page */
-            background-color: #f0f0f0; /* Light gray background color */
-            color: #333; /* Dark gray text color */
+        /* Make the entire page a flex container to control the layout */
+        html, body {
+            height: 100%; /* Ensure the body and html take up full height */
+            font-family: Arial, sans-serif; /* Sets the default font for the page 
+            background-color: #f0f0f0; /* Light gray background color 
+            color: #333; /* Dark gray text color 
             margin: 0;
             padding: 0;
-        }
-
+            display: flex;
+            flex-direction: column; /* Arrange items vertically */
+        }   
+    
         /* Styling for the header section */
         header {
             background-color: #333; /* Dark background color for contrast */
@@ -27,6 +29,7 @@
 
         /* Main container styling */
         .container {
+            flex: 1; /* This makes the container grow to fill available space */
             padding: 2rem; /* Padding inside the container */
             max-width: 800px; /* Maximum width for readability */
             margin: 0 auto; /* Centers the container on the page */
@@ -69,6 +72,8 @@
             padding: 1rem;
             background-color: #333; /* Dark background to match the header */
             color: white; /* White text for contrast */
+            flex-shrink: 0; /* Ensures the footer doesn't shrink */
+            width: 100%; /* Ensures the footer spans the full width of the screen */
         }
 
         /* Link styles */
