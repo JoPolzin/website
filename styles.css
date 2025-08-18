@@ -77,8 +77,9 @@ h2 {
 
 .logo-paragraph {
   display: flex;
-  align-items: flex-start;   /* align with first line of text */
+  align-items: flex-start;
   gap: 0.9rem;
+  margin-top: 1rem;
 }
 
 .logo-paragraph img {
