@@ -107,7 +107,7 @@ footer {
 a {
     color: #660837;
     text-decoration: none;
-    font-style: bold;
+    font-weight: bold;
 }
 
 a:hover {
