@@ -82,9 +82,10 @@ h2 {
 }
 
 .logo-paragraph img {
-    height: auto;
-    max-height: 100%; /* respect paragraph height */
-    object-fit: contain; /* scale nicely */
+  height: 100%;                 
+  width: auto;                
+  object-fit: contain;         
+  max-width: 96px;              
 }
 
 
