@@ -75,6 +75,19 @@ h2 {
     margin-left: 1rem;
 }
 
+.logo-paragraph {
+    display: flex;
+    align-items: stretch; /* make items equal height */
+    gap: 1rem; /* space between image and text */
+}
+
+.logo-paragraph img {
+    height: auto;
+    max-height: 100%; /* respect paragraph height */
+    object-fit: contain; /* scale nicely */
+}
+
+
 footer {
     background-color: #333;
     color: white;
