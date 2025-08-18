@@ -76,18 +76,23 @@ h2 {
 }
 
 .logo-paragraph {
-    display: flex;
-    align-items: stretch; /* make items equal height */
-    gap: 1rem; /* space between image and text */
+  display: flex;
+  align-items: flex-start;   /* align with first line of text */
+  gap: 0.9rem;
 }
 
 .logo-paragraph img {
-  height: 100%;                 
-  width: auto;                
-  object-fit: contain;         
-  max-width: 96px;              
+  width: 72px;               /* pick 56–96px to taste */
+  height: auto;              /* keep aspect ratio */
+  object-fit: contain;
+  flex: 0 0 auto;
 }
 
+.logo-paragraph p {
+  margin: 0;                 /* remove default top margin */
+}
+
+.section img { max-width: 100%; height: auto; }
 
 footer {
     background-color: #333;
