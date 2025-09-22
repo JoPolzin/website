@@ -6,6 +6,7 @@ html, body {
 }
 
 body {
+    border: 2px solid black;
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
@@ -13,28 +14,32 @@ body {
     color: #333;
 }
 
-.page-border {
-    border: 2px solid black;
+header {
+     background-color: #333;
+     border-bottom: black solid 2px; 
 }
 
-
-header {
+header h1{
+    font-size: xx-large;
+    margin: 0;
     background-color: #222;
     color: white;
-    padding: 0.1rem 0;
+    padding: 1.5rem 0;
     text-align: center;
-     border-bottom: black solid 2px;
+    border-bottom: black solid 2px;
 }
 
-.subheader {
+header h2 {
+    font-size: medium;
+    font-weight: normal;
+    margin: 0;
     background-color: #333;
     color: white;
-    padding: 0.001rem 0;
+    padding: 1.0rem 0;
     text-align: center;
-    border-bottom: black solid 2px; 
 }
 
-.container {
+main {
     flex: 1;
     padding: 2rem;
     max-width: 800px;
@@ -49,7 +54,7 @@ header {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-.section.availability {
+section.availability {
     border: 2px solid #333; 
     border-radius: 5px;
     padding: 1rem 1.25rem;
@@ -58,13 +63,13 @@ header {
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-.section.availability h2 {
+section.availability h2 {
     margin-top: 0;
     font-size: 1.2rem;
     color: #333;
 }
 
-.section.availability p {
+section.availability p {
     margin: .5rem 0 0;
     line-height: 1.5;
 }
@@ -78,42 +83,43 @@ h2 {
     color: #333;
 }
 
-.section {
+section {
     margin-bottom: 2rem;
 }
 
-.about-me {
+section.about-me {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.about-me img {
+section.about-me img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    border: black solid 2px;
     margin-left: 1rem;
 }
 
-.logo-paragraph {
+div.logo-paragraph {
   display: flex;
   align-items: flex-start;
   gap: 0.9rem;
   margin-top: 1rem;
 }
 
-.logo-paragraph img {
+div.logo-paragraph img {
   width: 72px;               /* pick 56–96px to taste */
   height: auto;              /* keep aspect ratio */
   object-fit: contain;
   flex: 0 0 auto;
 }
 
-.logo-paragraph p {
+div.logo-paragraphh p {
   margin: 0;                 /* remove default top margin */
 }
 
-.section img { max-width: 100%; height: auto; }
+section img { max-width: 100%; height: auto; }
 
 footer {
     background-color: #333;
