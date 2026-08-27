@@ -104,8 +104,8 @@ section.about-me img {
 div.logo-paragraph {
   display: flex;
   align-items: flex-start;
-  gap: 0.9rem;
-  margin-top: 1rem;
+  gap: 0rem;
+  margin-top: 0rem;
 }
 
 div.logo-paragraph img {
@@ -113,10 +113,11 @@ div.logo-paragraph img {
   height: auto;              /* keep aspect ratio */
   object-fit: contain;
   flex: 0 0 auto;
+  margin: 1.2rem;
 }
 
 div.logo-paragraphh p {
-  margin: 0;                 /* remove default top margin */
+  margin: 0rem;                 /* remove default top margin */
 }
 
 section img { max-width: 100%; height: auto; }
