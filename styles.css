@@ -109,15 +109,15 @@ div.logo-paragraph {
 }
 
 div.logo-paragraph img {
-  width: 72px;               /* pick 56–96px to taste */
-  height: auto;              /* keep aspect ratio */
+  width: 72px;              
+  height: auto;             
   object-fit: contain;
   flex: 0 0 auto;
   margin: 1.2rem;
 }
 
 div.logo-paragraphh p {
-  margin: 0rem;                 /* remove default top margin */
+  margin: 0rem;                
 }
 
 section img { max-width: 100%; height: auto; }
@@ -133,7 +133,7 @@ footer {
 }
 
 a {
-    color: #75a1b7;
+    color: #3C7A98;
     text-decoration: none;
     font-weight: bold;
 }
