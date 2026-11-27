@@ -112,6 +112,10 @@ nav li:has(a[aria-current="page"]) {
     margin-left: 0px;
 }
 
+nav a {
+    color: black;
+}
+
 main {
     grid-row: 1;
     grid-column: 2;
