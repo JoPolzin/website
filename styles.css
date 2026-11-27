@@ -39,19 +39,97 @@ header h2 {
     text-align: center;
 }
 
-main {
-    flex: 1;
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
+.content {
+    flex: 1;                        
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 800px) minmax(120px, 1fr);
     margin-top: 2rem;
     margin-bottom: 2rem;
+    align-items: start;
+    padding: 0 1rem;
+    align-items: stretch;
+}
+
+nav {
+    grid-row: 1;
+    grid-column: 3;
+    align-self: start;
+    justify-self: start;             
+    position: relative;
+    z-index: 2;                      
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    width: 145px;
+    margin: 0rem 0 0 -25px;         
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+}
+
+nav li {
+    text-align: right;
+    display: block;
+    padding: 1rem;
+    color: black;
+    background: #fff176;             
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    margin-top: 1rem;
+    border-radius: 0 5px 5px 0;
+}
+
+nav li:nth-child(1) { 
+    background: #fff176;
+    margin-left: 23px;
+}   
+nav li:nth-child(2) { 
+    background: #ff9ecd; 
+    margin-left: 23px;
+}  
+nav li:nth-child(3) { 
+    background: #a5e8ff; 
+    margin-left: 28px;
+}  
+nav li:nth-child(4) { 
+    background: #b9f6a0; 
+    margin-left: 33px;
+}   
+nav li:nth-child(5) { 
+    background: #ffcc80; 
+    margin-left: 38px;
+}   
+nav li:has(a[aria-current="page"]) {
+    transform: none;
+    border-radius: 5px;
+    margin-left: 0px;
+}
+
+main {
+    grid-row: 1;
+    grid-column: 2;
+    max-width: 800px;
+    margin: 0rem;
+    /* within page */
+    padding: 2rem;
+    /* page styling */
     background-color: white;
     border-style: solid;
     border-width: 2px;
     border-color: black;
     border-radius: 5px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    /* "background" pages  */
+    box-shadow:
+        5px 5px 0 -2px white,   5px 5px 0 0 black,
+        10px 10px 0 -2px white, 10px 10px 0 0 black,
+        0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 section.availability {
