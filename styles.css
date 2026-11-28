@@ -198,8 +198,14 @@ div.logo-paragraph img {
   margin: 1.2rem;
 }
 
-div.logo-paragraphh p {
-  margin: 0rem;                
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+div.logo-paragraph img.animated {
+  animation: rotate linear both;
+  animation-timeline: scroll(root block);
 }
 
 section img { max-width: 100%; height: auto; }
